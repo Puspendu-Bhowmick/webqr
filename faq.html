@@ -1,0 +1,139 @@
+<html>
+<head>
+  <meta name="description" content="QRCode scanner" />
+  <meta name="keywords" content="qrcode,scanner,barcode, javascript" />
+  <meta name="language" content="English" />
+  <meta name="copyright" content="Lazar Laszlo (c) 2011" />
+  <meta name="Revisit-After" content="1 Days"/>
+  <meta name="robots" content="index, follow"/>
+<title>Web QR</title>
+
+<style type="text/css">
+body{
+    width:100%;
+    text-align:center;
+}
+img{
+    border:0;
+}
+#main{
+    margin: 15px auto;
+    background:white;
+    overflow: auto;
+	width: 750px;
+}
+#header{
+    background:white;
+}
+#mainbody{
+    background: white;
+    width:100%;
+}
+#footer{
+    background:white;
+}
+#mp1{
+    text-align:center;
+    font-size:25px;
+}
+#header ul{
+    margin-bottom:0;
+    margin-right:40px;
+}
+#header li{
+    display:inline;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-weight: bold;
+    border-right: 1px solid #333333;
+}
+#header li a{
+    text-decoration: none;
+    color: black;
+}
+
+ul.faq{
+    font-size:20px;
+    text-align:left;
+}
+ul.resp{
+    font-size:15px;
+    list-style-type:none;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#footer a{
+	color: black;
+}
+
+</style>
+
+</head>
+
+<body >
+<div id="main">
+<div id="header">
+<table border="0" width="100%">
+<tr><td width="150px" align="center">
+<a href="http://www.webqr.com"><img src="logo2.gif" alt="Web QR"/></a>
+</td>
+<td align="center" valign="bottom">
+<img src="title2.gif" alt="QR Code scanner" />
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="create.html">Create</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="about.html">About</a></li>
+<li style="border: medium none;"><a href="contact.html">Contact</a></li>
+</ul>
+</td>
+<td align="center" width="150px">
+<img src="webqr.png" alt="Web QR"/>
+</td>
+</tr>
+</table>
+</div>
+<div id="mainbody">
+<p style="font-size:25px;text-align:center;">Frequently Asked Questions</p>
+<ul class="faq">
+<li>Which browser is supported ?
+<ul class="resp">
+<li>The latest  <a href="http://www.mozilla.com/firefox"><img src="firefox.png"/></a> or <a href="http://chrome.google.com"><img src="chrome_logo.gif"/></a> or <a href="http://www.opera.com"><img src="Opera-logo.png"/></a></li>
+</ul></li>
+<li>Why HTML5 ?
+<ul class="resp">
+<li>Because the image files are read and scanned using the HTML5 File API and canvas tag</li>
+</ul></li>
+<li>Why does the webcam scanner use the Adobe Flash player ?
+<ul class="resp">
+<li>For browsers not supporting the HTML5 getUserMedia API, images will be captured from the webcam using a flash script</li>
+</ul></li>
+<li>When I click on the Webcam, the box below remains white, why ?
+<ul class="resp">
+<li>If getUserMedia API is not supported you have to give access to the Webcam in the Flash settings by right click in the box then Settings and in the Privacy tab select Allow</li>
+</ul></li>
+<li>The webcam scanner doesn't recognize the QR Code, why ?
+<ul class="resp">
+<li>The Flash backed image capturing uses small resolution (320x240), you have to focus on the code and have good lighting conditions in order to scan QR Codes</li>
+</ul></li>
+</ul>
+</div>
+<div id="footer">
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8418802408648518";
+/* webqr */
+google_ad_slot = "4711287945";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<h5 align="center">Copyright &copy; 2011 <a target="_blank" href="http://www.lazarsoft.info">Lazar Laszlo</a></h5>
+</div>
+</div>
+</body>
+
+</html>
