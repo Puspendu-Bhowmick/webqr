@@ -72,15 +72,8 @@ qrcode.decode = function(src){
                 return;
             }
             
-            try
-            {
-                qrcode.result = qrcode.process(context);
-            }
-            catch(e)
-            {
-                console.log(e);
-                qrcode.result = "error decoding QR Code";
-            }
+            qrcode.result = qrcode.process(context);
+            
             if(qrcode.callback!=null)
                 qrcode.callback(qrcode.result);
         }
